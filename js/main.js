@@ -59,6 +59,7 @@ function openDoorThree() {
         doorThree.src = images[picIdx];
     })
     render();
+    
     console.log(results);
     // render()
 }
@@ -70,6 +71,7 @@ function render() {
     } else {
         msgEl.innerHTML = "You Survived!"
     }
+   
 }
 
 function restartButton() {
@@ -77,10 +79,15 @@ function restartButton() {
 }
 
 function init(){
+    results.forEach(function(picIdx) {
+        doorOne.src = images[picIdx];
+    })
     msgEl.innerHTML = "Welcome, Click on a door!";
     doorOne.src = "https://i.imgur.com/1dJhrVU.png";
     doorTwo.src = "https://i.imgur.com/1dJhrVU.png";
     doorThree.src = "https://i.imgur.com/1dJhrVU.png";
+    
+
  
 }
 

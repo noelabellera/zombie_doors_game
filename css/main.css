@@ -6,7 +6,7 @@
 
 .doorsBlock {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
     margin: 0 auto;
 }
@@ -14,8 +14,9 @@
 .doors {
     height: 520px;
     width: 300px;
-    margin: 0 auto;
-    padding: 40px 45px 10px 45px;
+    margin: 25px 50px;
+    /* padding: 40px 45px 10px 45px; */
+    cursor: pointer;
 }
 
 #title {
