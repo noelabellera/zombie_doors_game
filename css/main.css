@@ -56,6 +56,17 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background-color: tomato;
+    transform: scale(1.25);
+    transition: .2s;
+}
+
+button:active {
+    outline: none;
+    border: none;
+}
+
 #bottomBtn {
     margin: 0 0 45px 0;
 }
