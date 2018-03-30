@@ -54,6 +54,8 @@ button {
     justify-content: center;
     border-radius: 5%;
     cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 button:hover {
@@ -65,6 +67,7 @@ button:hover {
 button:active {
     outline: none;
     border: none;
+    background-color: dodgerblue;
 }
 
 #bottomBtn {
