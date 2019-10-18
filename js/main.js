@@ -24,12 +24,14 @@ document.getElementById("doorThree")
 document.getElementById("btn")
 .addEventListener('click', restartButton)
 
-
-
-function openDoorOne() {
+function shuffleArr() {
     results.sort(function() {
         return .5 - Math.random();
-    });
+    })
+}
+
+function openDoorOne() {
+    shuffleArr();
     results.forEach(function(picIdx) {
         doorOne.src = images[picIdx];
     })
@@ -40,9 +42,7 @@ function openDoorOne() {
 }
 
 function openDoorTwo() {
-    results.sort(function() {
-        return .5 - Math.random();
-    });
+    shuffleArr();
     results.forEach(function(picIdx) {
         doorTwo.src = images[picIdx];
     })
@@ -52,9 +52,7 @@ function openDoorTwo() {
 }
 
 function openDoorThree() {
-    results.sort(function() {
-        return .5 - Math.random();
-    });
+    shuffleArr();
     results.forEach(function(picIdx) {
         doorThree.src = images[picIdx];
     })
